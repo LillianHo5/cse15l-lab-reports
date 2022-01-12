@@ -18,3 +18,6 @@
 
 **Honorable Mentions**
 * Lofthouse Sugar Cookies 
+
+--- 
+**Here** are some changes I am making via *vscode!*

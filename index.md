@@ -9,7 +9,7 @@
 
 ---
 
-![Image](https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/62298.jpg?output-format=auto&output-quality=auto&resize=600:*)
+![Image](https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/62298.jpg?output-format=auto&output-quality=auto&resize=200:*)
 > I am craving cookies now 
 
 **Best Cookies** 

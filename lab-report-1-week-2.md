@@ -54,7 +54,23 @@ Let's try these commands out, along with other variations of them!
 ## Moving Files with `scp`
 Now, we'll learn about a special command we could use to copy files from your computer to the remote server, or vice versa! 
 
-This command is `scp` - this is always run from the **client**. 
- 
+This command is `scp` - this is always run from the **client**. Below is an example of a standard command you may run to copy a file from your computer to the remote server: 
+```
+$ scp Hello.java cs15lwi22xx@ieng6.ucsd.edu
+```
+
+After running this command, you would be asked to type in your password for the course-specific account, in order to copy the file onto the remote server. 
+
+The file, Hello.java, is being copied to the course specific account. You can check if the file has been copied by connecting to the remote server and running the `ls` command! 
+
+Below is another example of the `scp` command being run. After moving a file named *WhereAmI.java* to the remote server under my course specific account, I was prompted to enter my password to complete the process.
+
+![Week 1 Example](scpCommand.png)
+
+
 ## Setting an SSH Key 
+You have probably noticed how time-consuming it might be to type (or copy and paste) our password, everytime we want to connect to the server through `ssh` or copying files using `scp`. 
+
+In order to avoid this proble, we can use `ssh` keys! These keys can be created through the `ssh-keygen` command, which creates a pair of files: the public key and the private key. In order to use these keys, we must copy the public key to the 
+
 ## Optimizing Remote Running

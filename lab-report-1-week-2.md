@@ -1,7 +1,3 @@
-![Image](Lab1ScreenshotExample.png)
-
----
-
 # Lab Report #1
 ## Week 2
 

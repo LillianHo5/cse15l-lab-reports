@@ -64,11 +64,11 @@ After running this command, you would be asked to type in your password for the 
 
 The file, Hello.java, is being copied to the course specific account. You can check if the file has been copied by connecting to the remote server and running the `ls` command! 
 
-Below is another example of the `scp` command being run. After moving a file named *WhereAmI.java* to the remote server under my course specific account, I was prompted to enter my password to complete the process.
+Below is another example of the `scp` command being run. After moving a file named *WhereAmI.java* to the remote server under my course specific account, I was prompted to enter my password to complete the process (see example below).
 
 ![Week 1 Example](scpCommand.png)
 
-
+After entering your password, the file should appear in your account on the remote server!
 ## Setting an SSH Key 
 You have probably noticed how time-consuming it might be to type (or copy and paste) our password, everytime we want to connect to the server through `ssh` or copying files using `scp`. 
 

@@ -37,6 +37,8 @@ Let's try these, along with other variations out!
 * `ls -a` would list all files/directories (including hidden ones). Note: Hidden files/directories are denoted with a "." before its name. 
 ![usingls-a](lscommandtest1.png)
 *`ls -lat` would list all files/directories (including hidden ones). It also lists other information, including who could access certain files, file size, and displays when files were last modified. 
+3. `pwd`
+* prints the working directory the terminal is in 
 
 ## Moving Files with `scp`
 ## Setting an SSH Key 

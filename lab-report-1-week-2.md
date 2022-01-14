@@ -48,6 +48,7 @@ Let's try these commands out, along with other variations of them!
  (ls is used before and after `mkdir helloWorld` to check if the new directory is created) 
 5. `cp`
 * copies files/directories to a specific destination
+i.e.
 ![using cp](cpCommand.png)
 (copied the screenshot used in #4 to a directory named "Lab_Images" in Downloads)
 

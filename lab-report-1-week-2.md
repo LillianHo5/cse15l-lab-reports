@@ -71,6 +71,10 @@ Below is another example of the `scp` command being run. After moving a file nam
 ## Setting an SSH Key 
 You have probably noticed how time-consuming it might be to type (or copy and paste) our password, everytime we want to connect to the server through `ssh` or copying files using `scp`. 
 
-In order to avoid this proble, we can use `ssh` keys! These keys can be created through the `ssh-keygen` command, which creates a pair of files: the public key and the private key. In order to use these keys, we must copy the public key to the 
+In order to avoid this proble, we can use `ssh` keys! These keys can be created through the `ssh-keygen` command, which creates a pair of files: the public key and the private key. 
+
+In order to use these keys, we must copy: 
+1. the public key to a specific location in the **server**
+2. the private key to a specific location in the **client**/**your computer**
 
 ## Optimizing Remote Running

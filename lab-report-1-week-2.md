@@ -81,8 +81,9 @@ In order to use these keys, we must copy:
 **Private Key**
 
 In order to do this, run `ssh-keygen` in the terminal. You may be prompted to enter the file you want to save the private key in. Enter the following: 
-
+```
 /Users/____/.ssh/id_rsa 
+```
 
 Fill in your user in the blank; for me, I would put lillianho since that's the user I use on my laptop. 
 

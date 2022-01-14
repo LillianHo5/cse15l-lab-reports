@@ -18,8 +18,7 @@ We'll be using a course-specific account for CSE 15L to connect to a remote serv
     ```
 3. Since this may be your first time connecting to the server, you may receive an authorization message that asks if whether or not you want to continue - answer saying "yes". Proceed by typing in the password you made for this account (see begining of "Remote Connecting"). 
 4. Afterwards, you should see an output similar to what's shown below (though I do not have the authentication message since it is not my first time logging in): 
-
-![Remotely Connecting](RemotelyConnecting.png)
+    ![Remotely Connecting](RemotelyConnecting.png)
 
 Congratulations! You are now connected to a remote server. 
 
@@ -29,7 +28,7 @@ There are a multitude of different commands you could make in the terminal, both
 Some commands include the following: 
 `cd`, `ls`, `pwd`, `mkdir`, and `cp`. 
 
-Let's try these, along with other variations, out! 
+Let's try these, along with other variations out! 
 1. `cd` 
 * allows users to change the directory 
 * adding "~" (tilde) at the end of the command (`cd ~`) 

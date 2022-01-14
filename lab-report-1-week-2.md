@@ -125,4 +125,8 @@ The first example connects to the remote server and then runs the `ls -a` comman
 
 The second example connects to the remote server and then compiles Hello.java, before exiting to the client and running the `java` command. The semicolons are to indicate that there are separate commands on the line!
 
+Below is an example of multiple commands being run from a terminal: 
+
+![Multiple Commands](Optimizing.png)
+
 Feel free to experiment on your own using these ideas! 

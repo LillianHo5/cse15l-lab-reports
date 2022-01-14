@@ -35,12 +35,18 @@ Let's try these commands out, along with other variations of them!
 2. `ls`
 * list files/directories in a directory 
 * `ls -a` would list all files/directories (including hidden ones). Note: Hidden files/directories are denoted with a "." before its name. 
+* ls -lat` would list all files/directories (including hidden ones). It also lists other information, including who could access certain files, file size, and displays when files were last modified. 
+
+Example of `ls -a`: 
 ![using ls -a](lsCommandTest1.png)
-*`ls -lat` would list all files/directories (including hidden ones). It also lists other information, including who could access certain files, file size, and displays when files were last modified. 
+
+Example of `ls -lat`:
 ![using ls -lat](lsCommandTest2.png)
+
 3. `pwd`
 * prints the path of the working directory (where the terminal is in)
-![using pwd](pwdCommand.png)
+    ![using pwd](pwdCommand.png)
+
 4. `mkdir` 
 * makes a new directory (specify the name of the directory after the `mkdir`)
 * i.e. 

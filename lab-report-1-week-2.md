@@ -28,18 +28,33 @@ There are a multitude of different commands you could make in the terminal, both
 Some commands include the following: 
 `cd`, `ls`, `pwd`, `mkdir`, and `cp`. 
 
-Let's try these, along with other variations out! 
+Let's try these commands out, along with other variations of them! 
 1. `cd` 
 * allows users to change the directory 
 * adding "~" (tilde) at the end of the command (`cd ~`) 
 2. `ls`
 * list files/directories in a directory 
 * `ls -a` would list all files/directories (including hidden ones). Note: Hidden files/directories are denoted with a "." before its name. 
-![usingls-a](lscommandtest1.png)
+![using ls -a](lsCommandTest1.png)
 *`ls -lat` would list all files/directories (including hidden ones). It also lists other information, including who could access certain files, file size, and displays when files were last modified. 
+![using ls -lat](lsCommandTest2.png)
 3. `pwd`
-* prints the working directory the terminal is in 
+* prints the path of the working directory (where the terminal is in)
+![using pwd](pwdCommand.png)
+4. `mkdir` 
+* makes a new directory (specify the name of the directory after the `mkdir`)
+* i.e. 
+ ![using mkdir](mkdirCommand.png)
+ (ls is used before and after `mkdir helloWorld` to check if the new directory is created) 
+5. `cp`
+* copies files/directories to a specific destination
+![using cp](cpCommand.png)
+(copied the screenshot used in #4 to a directory named "Lab_Images" in Downloads)
 
 ## Moving Files with `scp`
+Now, we'll learn about a special command we could use to copy files from your computer to the remote server, or vice versa! 
+
+This command is `scp` - this is always run from the **client**. 
+ 
 ## Setting an SSH Key 
 ## Optimizing Remote Running

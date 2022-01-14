@@ -85,7 +85,7 @@ In order to do this, run `ssh-keygen` in the terminal. You may be prompted to en
 /Users/____/.ssh/id_rsa 
 ```
 
-Fill in your user in the blank; for me, I would put lillianho since that's the user I use on my laptop. 
+Fill in your user in the blank, based on your file directory on your computer. For example, I would put lillianho since that's the user I use on my laptop. 
 
 Afterward, you may be asked to enter a passphrase - you can just hit enter twice, and the key should be saved in that file location! 
 

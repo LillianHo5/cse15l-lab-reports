@@ -35,18 +35,12 @@ Let's try these commands out, along with other variations of them!
 2. `ls`
 * list files/directories in a directory 
 * `ls -a` would list all files/directories (including hidden ones). Note: Hidden files/directories are denoted with a "." before its name. 
+    ![using ls -a](lsaCommand.png)
 * ls -lat` would list all files/directories (including hidden ones). It also lists other information, including who could access certain files, file size, and displays when files were last modified. 
-
-Example of `ls -a`: 
-![using ls -a](lsCommandTest1.png)
-
-Example of `ls -lat`:
-![using ls -lat](lsCommandTest2.png)
-
+    ![using ls -lat](lslatCommand.png)
 3. `pwd`
 * prints the path of the working directory (where the terminal is in)
-    ![using pwd](pwdCommand.png)
-
+![using pwd](pwdCommand.png)
 4. `mkdir` 
 * makes a new directory (specify the name of the directory after the `mkdir`)
 * i.e. 
@@ -80,7 +74,55 @@ You have probably noticed how time-consuming it might be to type (or copy and pa
 In order to avoid this proble, we can use `ssh` keys! These keys can be created through the `ssh-keygen` command, which creates a pair of files: the public key and the private key. 
 
 In order to use these keys, we must copy: 
-1. the public key to a specific location in the **server**
-2. the private key to a specific location in the **client**/**your computer**
+1. the private key to a specific location in the **client**/**your computer**
+2. the public key to a specific location in the **server**
+
+
+**Private Key**
+
+In order to do this, run `ssh-keygen` in the terminal. You may be prompted to enter the file you want to save the private key in. Enter the following: 
+
+/Users/____/.ssh/id_rsa 
+
+Fill in your user in the blank; for me, I would put lillianho since that's the user I use on my laptop. 
+
+Afterward, you may be asked to enter a passphrase - you can just hit enter twice, and the key should be saved in that file location! 
+
+**Public Key** 
+
+To copy the public key to the remote server (in the `.ssh` directory of the course specific account), log into your account with `ssh`: 
+```
+$ ssh cs15lwi22xx@ieng6.ucsd.edu
+```
+
+After logging in and inputting your password, make a `.ssh` directory using the `mk.dir` command:
+```
+$ mkdir .ssh
+```
+
+Then, log out and use the `scp` to copy the public key into the newly created `.ssh` directory! 
+```
+$ scp /Users/____/.ssh/id_rsa.pub cs15lwi22xx@ieng6.ucsd.edu:~/.ssh/authorized_keys
+```
+
+
+After completing these steps, you should be able to run commands such as `ssh` and `scp` without being prompted to enter password! 
 
 ## Optimizing Remote Running
+There are ways you could make remote running easier! 
+
+Rather than running one command per line, you could run multiple commands on a single line. 
+
+This could be accomplished using quotation marks and semicolons. 
+
+Examples include the following: 
+```
+$ ssh cs15lwixx@ieng6.ucsd.edu "ls -a; ls" 
+$ ssh cs15lwixx@ieng6.ucsd.edu javac Hello.java; java Hello
+```
+
+The first example connects to the remote server and then runs the `ls -a` command, followed by `ls`. These quotation marks indicate that these commands should be run on the server one after the other.
+
+The second example connects to the remote server and then compiles Hello.java, before exiting to the client and running the `java` command. The semicolons are to indicate that there are separate commands on the line!
+
+Feel free to experiment on your own using these ideas! 

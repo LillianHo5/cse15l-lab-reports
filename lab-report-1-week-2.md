@@ -40,7 +40,7 @@ Let's try these commands out, along with other variations of them!
     ![using ls -lat](lslatCommand.png)
 3. `pwd`
 * prints the path of the working directory (where the terminal is in)
-    ![using pwd](pwdCommand.png)
+    ![using pwd](pwd.png)
 4. `mkdir` 
 * makes a new directory (specify the name of the directory after the `mkdir`)
 * i.e. 

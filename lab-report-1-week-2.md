@@ -7,7 +7,7 @@ In order to install VS Code, head over to the [Visual Studio Code Website]( http
 Be sure to follow the instructions listed on the webpage to ensure VS Code is installed correctly on your device! You should be able to open a window that looks similar to what's shown above. 
 
 ## Remotely Connecting 
-We'll be using a course-specific account for CSE 15L to connect to a remote server on campus. In order to find this account, visit https://sdacs.ucsd.edu/~icc/index.php. It should resemble this address: cs15lwi22xx@ieng6.ucsd.edu, where xx are the letters on your personal account. Be sure to reset your password for that account to ensure that you'll be able to connect to the server! 
+We'll be using a course-specific account for CSE 15L to connect to a remote server on campus. In order to find this account, visit [sdacs.ucsd.edu](https://sdacs.ucsd.edu/~icc/index.php). It should resemble this address: cs15lwi22xx@ieng6.ucsd.edu, where xx are the letters on your personal account. Be sure to reset your password for that account to ensure that you'll be able to connect to the server! 
 
 **After everything is set up:**
 1. Open VSCode and the terminal (click Terminal and then the "New Terminal" option). 

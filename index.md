@@ -1,4 +1,4 @@
-# Hello! Welcome to Lillian Ho's CSE 15L Lab Reports.
+# Hello! Welcome to my CSE 15L Lab Reports.
 --- 
 
 ## Lab Reports

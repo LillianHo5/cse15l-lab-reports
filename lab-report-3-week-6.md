@@ -45,3 +45,4 @@ The same output that would have been created from  `scp TestFile.java cs15lwi22a
 ```
 $ scp TestFile.java ieng6:~/
 ```
+As shown above, `TestFile.java` was successfully copied from my local computer to the cs15l account using the newly created alias. To ensure that this file was copied properly, I ran `ls` to check if the file was present. 

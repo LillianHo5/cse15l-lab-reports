@@ -27,6 +27,6 @@
 **Link 1** 
 [Lab Report 1](lab-report-1-week-2.html)
 
-**Link #2**
+**Link 2**
 [Lab Report 1](https://Lillian-Ho.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
 

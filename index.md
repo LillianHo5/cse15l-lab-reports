@@ -1,6 +1,9 @@
-# Hello! Welcome to my CSE 15L Lab Reports.
+# Hello!
 
-## **Lab Reports**
+## Welcome to my CSE 15L lab reports.
+--- 
+
+## Lab Reports
 
 [Lab Report 1](https://Lillian-Ho.github.io/cse15l-lab-reports/lab-report-1-week-2.html)
 

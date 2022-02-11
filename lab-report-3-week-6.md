@@ -10,7 +10,7 @@ The `~/.ssh/config` file was created in the `.ssh` directory using the following
 $ touch config
 ```
 
-Afterward, the command `vim config` was used to edit the file, in order to create an alias with the following lines:
+In order to ensure that the `config` file was created, I ran the `ls` command in the `.ssh` directory to check if the file was present. Afterward, the command `vim config` was used to edit the file, in order to create an alias with the following lines:
 ```
 Host ieng6
     HostName ieng6.ucsd.edu

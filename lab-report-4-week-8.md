@@ -1,10 +1,8 @@
 # Lab Report #4: Week 8
 
 ## MarkdownParse Implementations: 
-**My MarkdownParse Implementation**: 
-https://github.com/Lillian-Ho/markdown-parse
-
-**MarkdownParse Implementation Reviewed**:
+1. [My markdown-parse repository](https://github.com/Lillian-Ho/markdown-parse)
+2. [The markdown-parse implementation reviewed](PlaceHolder.com) 
 
 
 ## Expected Outputs 
@@ -18,6 +16,8 @@ https://github.com/Lillian-Ho/markdown-parse
 
 [`code]`](ucsd.edu)
 ``` 
+* Expected Output: [google.com, ucsd.edu]
+ 
 
 **Snippet 2** 
 ```
@@ -27,6 +27,7 @@ https://github.com/Lillian-Ho/markdown-parse
 
 [some escaped \[ brackets \]](example.com)
 ```
+* Expected Output: [a.com(()), example.com]
 
 **Snippet 3** 
 ```
@@ -55,3 +56,4 @@ And there's still some more text after that.
 
 And then there's more text
 ```
+* Expected Output: [https://ucsd-cse15l-w22.github.io/]

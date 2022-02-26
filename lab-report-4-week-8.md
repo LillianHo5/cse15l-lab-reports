@@ -82,7 +82,7 @@ And then there's more text
 
 ## Snippet 1 
 
-With my current implementation, I feel that a more involved change might need to occur in order to cover all related cases that use inline code with backticks. 
+With my current implementation, I feel that a more involved change might need to occur in order to cover all related cases that use inline code with backticks (over 10 lines). 
 * For instance, when editing `MarkdownParse.java` to remove the url.com output, an `if` statement should be used to check if the the character before `nextOpenBracket` was a backtick. If it was, `currentIndex` would be updated to be `closeParen + 1` in order to skip over it, followed with `continue`. 
 
 Example implementation: 
@@ -117,6 +117,6 @@ Looking through the steps, I found that line 24 of snippet 3 causes this excepti
 
 ![Snippet 3 New Ouput](NewOutputForSnippet3.png)
 
-In order to fix my implementation, I would need to make a large change to achieve the correct output. For instance, it appears that links with line breaks in the middle of the link are considered links, when they shouldn't be. Additionally, the link without a closing parentheses is considered a link when it shouldn't have been due to the line breaks. Finally, a link with a closing parenthesis on a different line is considered a link when it shouldn't have been. 
+In order to fix my implementation, I would need to make a large change to achieve the correct output (over 10 lines). For instance, it appears that links with line breaks in the middle of the link are considered links, when they shouldn't be. Additionally, the link without a closing parentheses is considered a link when it shouldn't have been due to the line breaks. Finally, a link with a closing parenthesis on a different line is considered a link when it shouldn't have been. 
 
 As a result, the fixes required to achieve the correct output may require many lines. It appears that links that have line breaks with parentheses and brackets are not considered links. As a fix, a boolean helper method can be created that specifically works to check for line breaks in a link's line, where the parameter would be the link being looked at (`markdown.substring(openParen + 1, closeParen)`). At every character in the substring, two consecutives `\n` can be searched for. For instance, there can be an `if` statement used to check for the initial `\n`. If that initial `\n` is found, then a nested `if` can check if there's another `\n` afterwards. If this is true, then the method can return true. This method can be used in an `if` statement within `getLinks`, where if it evaluates to true, `currentIndex` would be updated and `continue` would be used to skip the current link and not add it. To avoid the `IndexOutOfBounds` exception from being thrown, in the helper method, an open parenthesis can be checked for prior to going through the loop. If there is no open parenthesis found, false can be returned automatically.

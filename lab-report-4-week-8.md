@@ -59,8 +59,17 @@ And then there's more text
 * Expected Output: [https://ucsd-cse15l-w22.github.io/]
 
 ## Written JUnit Tests (MarkdownParseTest.java)
+
+**My Tests:**
+![JUnit Tests for Snippets](fullScreenshot.png)
+
+**Other Implementation's Tests:**
+![JUnit Tests for Snippets](OtherImplementationJUnit.png)
+
+* These JUnit tests were written in both my implementation of markdown-parse, as well as the implementation reviewed. Markdown files were made for each of the code snippets, such as `Snippet1.md`, `Snippet2.md`, and `Snippet3.md`. The JUnit tests in the other implementation were added using the `vim MarkdownParseTest.java` command. 
+
+**Close Up of Tests Written:** 
 ![JUnit Tests for Snippets](JUnitTestsForSnippets.png)
-* These JUnit tests were written in both my implementation of markdown-parse, as well as the implementation reviewed. Markdown files were made for each of the code snippets, such as `Snippet1.md`, `Snippet2.md`, and `Snippet3.md`. 
 
 ## Test Results
 **My Implementation** 

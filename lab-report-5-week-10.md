@@ -48,7 +48,7 @@ Each of the tests with different results were found by manually going through th
     ![Test 201 Output](mytest-file201output.png)
 
     **Week 9 Lab Implementation:**
-    
+
     ![Test 201 Output](othertest-file201output.png)
 
 2. The bug in the week 9 lab implementation that may have caused the wrong output is that it doesn't necessarily check if there is an open parentheses immediately after the closing bracket. Because of this, if there are open and closing parentheses and both an open parentheses and closing parentheses are on the same line, the content in between the two parentheses will be returned. This shows why there was an output [baz], rather than [] for the week 9 lab implementation. 
@@ -85,11 +85,11 @@ Each of the tests with different results were found by manually going through th
 
 2. According to the output in the terminal when running `bash script.sh` for my implementation, a `StringIndexOutOfBoundsException` was thrown when running the particular test. After further inspecting the test file, I noticed that my implementation would throw such exceptions when there was an empty line following the last link. In order to resolve this bug and prevent this symptom from showing up, an `if` statement could be added prior to the `if` statement checking whether or not the supposed link is an image (line 22): 
 
-![My Implementation](myimplementationwithfixfor503.png)
+    ![My Implementation](myimplementationwithfixfor503.png)
 
-Above, the proposed fix is found at lines 19 to 21. It checks if there is a `nextOpenBracket` present - if not, this implies that there are no more links in the markdown file, and that we can exit out of the method. This fix would allow my implementation to have the expected output: 
+    Above, the proposed fix is found at lines 19 to 21. It checks if there is a `nextOpenBracket` present - if not, this implies that there are no more links in the markdown file, and that we can exit out of the method. This fix would allow my implementation to have the expected output: 
 
-![Fixed output](myimplementationwithfixedoutput.png)
+    ![Fixed output](myimplementationwithfixedoutput.png)
 
 
 

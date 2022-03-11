@@ -31,7 +31,7 @@
 ![Test 503 Output](othertest-file503output.png)
 
 
-Each of the tests with different results were found by manually going through the `results.txt` file for each implementation, after running `bash script.sh > results.txt` in the terminal for both. I initially used `diff` on the results, but I wasn't able to spot comparisons as easily compared to scrolling through the two files manually. 
+Each of the tests with different results were found by manually going through the `results.txt` file for each of the implementations, after running `bash script.sh > results.txt` in the terminal for both. I initially used `diff` on the results, but I wasn't able to spot comparisons as easily compared to scrolling through the two files manually. 
 
 --- 
 
@@ -80,9 +80,11 @@ Each of the tests with different results were found by manually going through th
 
 2. According to the output in the terminal when running `bash script.sh` for my implementation, a `StringIndexOutOfBoundsException` was thrown when running the particular test. After further inspecting the test file, I noticed that my implementation would throw such exceptions when there was an empty line following the last link. In order to resolve this bug and prevent this symptom from showing up, an `if` statement could be added prior to the `if` statement checking whether or not the supposed link is an image (line 22): 
 
-![My Implementation](myimplementationwithfix.png)
+![My Implementation](myimplementationwithfixfor503.png)
 
-Above, the proposed fix is found at lines 19 to 21. It checks if there is a `nextOpenBracket` present - if not, this implies that there are no more links in the markdown file, and that we can exit out of the method.
+Above, the proposed fix is found at lines 19 to 21. It checks if there is a `nextOpenBracket` present - if not, this implies that there are no more links in the markdown file, and that we can exit out of the method. This fix would allow my implementation to have the expected output: 
+
+![Fixed output](myimplementationwithfixedoutput.png)
 
 
 
